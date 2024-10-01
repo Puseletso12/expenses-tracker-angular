@@ -1,0 +1,28 @@
+
+<!-- one data binding -->
+
+<h1>{{title}}</h1>
+
+<h2>{{greeting}}</h2>
+
+<!-- property binding -->
+
+<button [disabled] = 'isDisabled'> add</button>
+
+<!-- Event binding -->
+
+<button (click)="onClick()">event binding</button>
+
+<!-- Two way binding -->
+<input type="text" placeholder="Enter Item" [(ngModel)]="username" />
+
+<!-- styling -->
+<h1 [ngStyle]="{color: 'orange'}">Hi, my name is Puseletso</h1>
+
+<div [ngStyle]="dynamicCss">
+  <h2>Hi i'm learning Angular</h2>
+</div>
+
+<!-- <button [ngClass]='{active: 'isActive'}' ></button> -->
+
+<router-outlet />
